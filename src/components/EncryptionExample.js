@@ -12,12 +12,16 @@ function EncryptionExample() {
     };
 
     return (
-        <div className='encryptInputs'>
-            <textarea type="text" onChange={e => setText(e.target.value)} />
-            <input type="password" onChange={e => setPassword(e.target.value)} />
-            <button onClick={handleEncryption}>Encrypt</button>
-            <p>Encrypted Text: {encryptedText}</p>
-        </div>
+        <>
+            <div className='encryptInputs'>
+                <textarea type="text" onChange={e => setText(e.target.value)} />
+                <input type="password" onChange={e => setPassword(e.target.value)} />
+                <button onClick={handleEncryption}>Encrypt</button>
+            </div>
+            <div className='output'>
+                <p>Encrypted Text: {encryptedText}</p>
+            </div>
+        </>
     );
 }
 

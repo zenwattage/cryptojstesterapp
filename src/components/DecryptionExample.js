@@ -13,12 +13,17 @@ function DecryptionExample() {
     };
 
     return (
-        <div className="decryptInputs">
-            <textarea onChange={e => setEncryptedText(e.target.value)}></textarea>
-            <input type="password" onChange={e => setPassword(e.target.value)} />
-            <button onClick={handleDecryption}>Decrypt</button>
-            <p>Decrypted Text: {decryptedText}</p>
-        </div>
+        <>
+            <div className="decryptInputs">
+                <textarea onChange={e => setEncryptedText(e.target.value)}></textarea>
+                <input type="password" onChange={e => setPassword(e.target.value)} />
+                <button onClick={handleDecryption}>Decrypt</button>
+
+            </div>
+            <div className='output'>
+                <p>Decrypted Text: {decryptedText}</p>
+            </div>
+        </>
     );
 }
 
