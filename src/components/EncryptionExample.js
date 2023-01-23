@@ -9,6 +9,7 @@ function EncryptionExample() {
     const handleEncryption = () => {
         const ciphertext = CryptoJS.AES.encrypt(text, password);
         setEncryptedText(ciphertext.toString());
+
     };
 
     return (

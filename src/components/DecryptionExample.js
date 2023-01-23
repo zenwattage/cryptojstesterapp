@@ -19,6 +19,7 @@ function DecryptionExample() {
                 <input type="password" onChange={e => setPassword(e.target.value)} />
                 <button onClick={handleDecryption}>Decrypt</button>
 
+
             </div>
             <div className='output'>
                 <p>Decrypted Text: {decryptedText}</p>
